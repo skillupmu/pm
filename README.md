@@ -51,9 +51,14 @@ red, pink, purple, deep purple, indigo, blue, light blue, cyan, teal, green, lig
 
 ## yaml
 
- - [本サイトのyaml]()
+ - [本サイトのyaml](https://github.com/skillupmu/pm/blob/main/docs/assets/extra.css)
  - [Material for MkDocs公式のyaml](https://github.com/squidfunk/mkdocs-material/blob/master/mkdocs.yml)
  - [PyMdown Extensions Documentation公式のyaml](https://github.com/facelessuser/pymdown-extensions/blob/main/mkdocs.yml)
+
+
+## css
+
+ - [本サイトのcss](https://github.com/skillupmu/pm/blob/main/mkdocs.yml)
 
 
 ## git
@@ -108,18 +113,11 @@ pm/
   - https://giscus.app/ja
 
 ```
-{% extends "base.html" %}
-
-{% block content %}
-  {{ super() }}
-
-  <!-- Giscus -->
-  <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
-  <script src="https://giscus.app/client.js"
+<script src="https://giscus.app/client.js"
         data-repo="skillupmu/pm"
-        data-repo-id="R_kgDOKvZLnQ"
+        data-repo-id="R_kgDOKxdM6w"
         data-category="Announcements"
-        data-category-id="DIC_kwDOKvZLnc4CbE2D"
+        data-category-id="DIC_kwDOKxdM684CbNzi"
         data-mapping="pathname"
         data-strict="0"
         data-reactions-enabled="1"
@@ -129,6 +127,6 @@ pm/
         data-lang="ja"
         crossorigin="anonymous"
         async>
-  </script>
+</script>
 
 ```
