@@ -45,6 +45,8 @@ mkdocs gh-deploy
 
 ## color
 
+  - [カラーピッカー](https://lab.syncer.jp/Tool/Image-Color-Picker/)
+
 ```
 red, pink, purple, deep purple, indigo, blue, light blue, cyan, teal, green, light green, lime, yellow, amber, orange, deep orange, brown, grey, blue grey, black, white
 ```
