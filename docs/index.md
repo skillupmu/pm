@@ -58,7 +58,7 @@ red, pink, purple, deep purple, indigo, blue, light blue, cyan, teal, green, lig
 
 ## css
 
- - [本サイトのcss](https://github.com/skillupmu/pm/blob/main/mkdocs.yml)
+ - [本サイトのcss](https://github.com/skillupmu/pm/blob/main/docs/assets/extra.css)
 
 
 ## git
