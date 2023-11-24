@@ -51,7 +51,7 @@ red, pink, purple, deep purple, indigo, blue, light blue, cyan, teal, green, lig
 
 ## yaml
 
- - [本サイトのyaml](https://github.com/skillupmu/pm/blob/main/docs/assets/extra.css)
+ - [本サイトのyaml](https://github.com/skillupmu/pm/blob/main/mkdocs.yml)
  - [Material for MkDocs公式のyaml](https://github.com/squidfunk/mkdocs-material/blob/master/mkdocs.yml)
  - [PyMdown Extensions Documentation公式のyaml](https://github.com/facelessuser/pymdown-extensions/blob/main/mkdocs.yml)
 
