@@ -1,0 +1,99 @@
+site_description: 'PM知識体系'
+site_author: 'skillupmu'
+site_url: 'https://skillupmu.github.io/pm/'
+copyright: 'Copyright © 2023 skillupmu'
+repo_url: 'https://github.com/skillupmu/pm'
+site_name: 'PM研修'
+theme:
+  name: 'material'
+  #language: 'ja'
+  custom_dir: overrides
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  palette:
+    - media: '(prefers-color-scheme: light)' 
+      scheme: 'default'
+      primary: 'blue grey'  # ヘッダーの色
+      accent: 'blue'  # ボタンやリンクの色
+      toggle:
+        icon: 'material/toggle-switch-off-outline'
+        name: 'Switch to dark mode'
+    - media: '(prefers-color-scheme: dark)' 
+      scheme: 'slate'
+      primary: 'blue grey'  # ヘッダーの色
+      accent: 'blue'  # ボタンやリンクの色
+      toggle:
+        icon: 'material/toggle-switch'
+        name: 'Switch to light mode'
+  icon:
+      logo: 'material/bookshelf'
+      repo: 'fontawesome/brands/github'
+  #logo: assets/logo.png
+  #favicon: assets/favicon.png
+  features:
+    - navigation.top
+    - header.autohide  #タイトルバーが隠れるようにする
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.code.copy
+    - content.code.select
+    #- navigation.instant  #大規模サイトの場合に有効
+    #- navigation.tabs  #トップレベルのセクションがタブになる
+    #- navigation.tabs.sticky  #タブ表示を固定する
+    #- navigation.sections   #サイドバーのセクションの折り畳みを無効
+    #- navigation.expand   #サイドバーのセクションの折り畳みについてデフォルトが展開の状態
+    #- toc.integrate   #右側のサイドバーを左側に移す
+plugins:
+  - search:
+      lang: ja
+extra_css:
+  - 'https://use.fontawesome.com/releases/v6.4.2/css/all.css'
+  - assets/extra.css
+extra_javascript:
+  - assets/extra.js
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/skillupmu
+      name: skillupmu on Twitter
+    - icon: fontawesome/brands/github
+      link: https://github.com/skillupmu/pm
+      name: GitHub Repository
+    - icon: fontawesome/solid/envelope
+      link: mailto:skillupmu@gmail.com
+      name: Email to skillupmu
+markdown_extensions:
+  - toc:
+      #permalink: true  # パーマリンクを有効にする
+      #permalink_class: toc-permalink  # パーマリンクに適用するクラス
+      toc_depth: 3  # 表示する目次の深さ
+      #toc_class: toc  # 目次に適用するクラス
+  - def_list
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.betterem # 文字の強調表現
+  - pymdownx.magiclink # URL はリンクとして扱う
+  - footnotes # 脚注
+  - tables # テーブル
+  - admonition
+  - pymdownx.details # !!! ではなく ??? と記述することで開閉可能に
+  - attr_list
+  - md_in_html
+  - abbr
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      # linenums: true # code block に行番号の追加
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed: # タブ有効化
+      alternate_style: true
