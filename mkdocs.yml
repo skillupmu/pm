@@ -1,9 +1,10 @@
-site_description: 'PM知識体系'
-site_author: 'skillupmu'
-site_url: 'https://skillupmu.github.io/pm/'
-copyright: 'Copyright © 2023 skillupmu'
-repo_url: 'https://github.com/skillupmu/pm'
 site_name: 'PM研修'
+site_url: 'https://skillupmu.github.io/pm/'
+site_author: 'skillupmu'
+site_description: 'PM知識体系'
+repo_name: 'skillupmu/pm'
+repo_url: 'https://github.com/skillupmu/pm'
+copyright: 'Copyright © 2023 skillupmu'
 theme:
   name: 'material'
   #language: 'ja'
@@ -27,8 +28,21 @@ theme:
         icon: 'material/toggle-switch'
         name: 'Switch to light mode'
   icon:
-      logo: 'material/bookshelf'
-      repo: 'fontawesome/brands/github'
+    logo: 'material/bookshelf'
+    repo: 'fontawesome/brands/github'
+    admonition:
+      note: 'fontawesome/solid/note-sticky'
+      abstract: 'fontawesome/solid/book'
+      info: 'fontawesome/solid/circle-info'
+      tip: 'fontawesome/solid/bullhorn'
+      success: 'fontawesome/solid/check'
+      question: 'fontawesome/solid/circle-question'
+      warning: 'fontawesome/solid/triangle-exclamation'
+      failure: 'fontawesome/solid/bomb'
+      danger: 'fontawesome/solid/skull'
+      bug: 'fontawesome/solid/robot'
+      example: 'fontawesome/solid/flask'
+      quote: 'fontawesome/solid/quote-left'
   #logo: assets/logo.png
   #favicon: assets/favicon.png
   features:
@@ -97,3 +111,6 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.tabbed: # タブ有効化
       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
