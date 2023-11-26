@@ -43,12 +43,82 @@ mkdocs gh-deploy
   - [Canva](https://www.canva.com/ja_jp/login/?redirect=%2Fdesign%2FDAFvAApKstw%2FRFzNffvUHeSvTd4_Bf7iBQ%2Fedit)
 
 
+## admonition
+
+```
+theme:
+  icon:
+    admonition:
+      note: 'fontawesome/solid/note-sticky'
+      abstract: 'fontawesome/solid/book'
+      info: 'fontawesome/solid/circle-info'
+      tip: 'fontawesome/solid/bullhorn'
+      success: 'fontawesome/solid/check'
+      question: 'fontawesome/solid/circle-question'
+      warning: 'fontawesome/solid/triangle-exclamation'
+      failure: 'fontawesome/solid/bomb'
+      danger: 'fontawesome/solid/skull'
+      bug: 'fontawesome/solid/robot'
+      example: 'fontawesome/solid/flask'
+      quote: 'fontawesome/solid/quote-left'
+```
+
+!!! note "note"
+
+    メモやノート、ポイントを記載
+
+!!! abstract "abstract"
+
+    要約を記載
+
+!!! info "info"
+
+    インフォメーションを記載
+
+!!! tip "tip"
+
+    tip、ヒントを記載
+
+!!! success "success"
+
+    成功したものを記載
+
+!!! question "question"
+
+    質問を記載
+
+!!! warning "warning"
+
+    警告を記載
+
+!!! failure "failure"
+
+    失敗を記載
+
+!!! danger "danger"
+
+    危険を記載
+
+!!! bug "bug"
+
+    バグ、誤りを記載
+
+!!! example "example"
+
+    例を記載
+
+!!! quote "quote"
+
+    引用を記載
+
+
+
 ## color
 
   - [カラーピッカー](https://lab.syncer.jp/Tool/Image-Color-Picker/)
 
 ```
-red, pink, purple, deep purple, indigo, blue, light blue, cyan, teal, green, light green, lime, yellow, amber, orange, deep orange, brown, grey, blue grey, black, white
+red, pink, purple, deep purple, indigo(#4051b5), blue(#2094f3), light blue, cyan, teal, green, light green, lime, yellow, amber, orange, deep orange, brown, grey, blue grey, black, white
 ```
 
 ## yaml
@@ -129,4 +199,17 @@ pm/
         crossorigin="anonymous"
         async>
 </script>
+```
+
+## md_in_html
+
+```
+<div class="result" markdown>
+  <div class="base" markdown>
+
+# Markdown
+
+  </div>
+</div>
+
 ```
